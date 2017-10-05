@@ -42,6 +42,7 @@ D2<-dplyr::select(A8, "userid_DI", "start_time_DI")
 ```
 
 #9. Create a new data frame (D3) in which the column names are the registration dates, with one column containing the student ids and all other cells indicating a 1 if the student registered on that date or an NA if they did not (hint: you will need to create a new variable before you change the structure of your data frame)
+#not sure
 ```{r}
 D3 <- dplyr::select(D1, userid_DI, start_time_DI, registered)
 D3 <- dplyr::group_by(D3,userid_DI, start_time_DI, registered)
